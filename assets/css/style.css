@@ -2,6 +2,12 @@ html{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+body{
+    background-image: url(../images/uw-pool-3.jpg);
+    background-size: cover;
+    background-position: 50% 25%;
+}
+
 .page-header{
     height: 70px;
     background-color: rgb(57, 59, 65);
@@ -45,11 +51,10 @@ a:active{
 }
 
 .subtitle-box{
-    height: 150px;
-    border: red solid 2px;
+    height: 180px;
     display: flex;
     justify-content: end;
-    align-items: end;
+    align-items: center;
 }
 
 h2{
