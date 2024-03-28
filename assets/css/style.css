@@ -1,10 +1,14 @@
+html{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .page-header{
     height: 70px;
     background-color: rgb(57, 59, 65);
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} 
 
 h1{
     height: 50px;
@@ -14,6 +18,7 @@ h1{
     padding-right: 5px;
     color: rgb(57, 59, 65);
     border-radius: 0px 5px 5px 0px;
+
 }
 
 .header-nav{
@@ -37,4 +42,24 @@ a:hover{
 
 a:active{
     color:rgb(209, 181, 22);
+}
+
+.subtitle-box{
+    height: 150px;
+    border: red solid 2px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+h2{
+    height: 40px;
+    font-size: 35px;
+    background-color: aqua;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgb(57, 59, 65);
+    border-radius: 5px 5px 5px 5px;
+    margin-right: 40px;
+    margin-bottom: 10px;
 }
