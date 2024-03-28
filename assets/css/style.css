@@ -51,7 +51,7 @@ a:active{
 }
 
 .subtitle-box{
-    height: 180px;
+    height: 200px;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -60,11 +60,50 @@ a:active{
 h2{
     height: 40px;
     font-size: 35px;
-    background-color: aqua;
+    background-color: rgb(57, 59, 65);
     padding-left: 5px;
     padding-right: 5px;
-    color: rgb(57, 59, 65);
+    color: aqua;
     border-radius: 5px 5px 5px 5px;
     margin-right: 40px;
     margin-bottom: 10px;
+}
+
+.about-me{
+    display:flex;
+    justify-content: space-between;
+    color: red;
+    height: 200px;
+}
+
+.about-me-aside{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-right: solid rgb(57, 59, 65) 5px;
+    justify-content: top;
+    align-items: end;
+}
+
+h3{
+    color: white;
+    text-decoration: underline;
+    font-size: 60px;
+    font-weight: bold;
+    /* background-color: rgb(57, 59, 65); */
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 4px;
+    border-radius: 8%;
+}
+
+.p1{
+    color: white;
+    font-weight: bold;
+    background-color: rgb(57, 59, 65, 1);
+    margin-left: 20px;
+}
+
+.about-me-p{
+    flex: 3;
 }
