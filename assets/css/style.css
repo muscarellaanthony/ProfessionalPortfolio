@@ -89,7 +89,6 @@ h3{
     text-decoration: underline;
     font-size: 60px;
     font-weight: bold;
-    /* background-color: rgb(57, 59, 65); */
     margin-right: 10px;
     margin-top: 10px;
     padding: 4px;
@@ -160,41 +159,23 @@ h3{
 
 .diving-img{
     background-image: url(../images/diving.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 200px;
-    width: 47%;
-    display: flex;
-    align-items: end;
-    box-shadow: 0px 0px 4px 6px aqua;
     margin-left: 20px;
 }
 
 .goggles-img{
     background-image: url(../images/goggles.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 200px;
-    width: 47%;
-    display: flex;
-    align-items: end;
-    box-shadow: 0px 0px 4px 6px aqua;
 }
 
 .calculator-img{
     background-image: url(../images/calculator.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 200px;
-    width: 47%;
-    display: flex;
-    align-items: end;
-    box-shadow: 0px 0px 4px 6px aqua;
     margin-left: 20px;
 }
 
 .surfing-img{
     background-image: url(../images/surfing.jpg);
+}
+
+.diving-img, .goggles-img, .calculator-img, .surfing-img{
     background-position: center;
     background-size: cover;
     height: 200px;
