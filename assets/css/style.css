@@ -26,13 +26,12 @@ h1{
     padding-right: 5px;
     color: rgb(57, 59, 65);
     border-radius: 0px 5px 5px 0px;
-
+    text-align: center;
 }
 
 .header-nav{
     font-size: 20px;
     margin-right: 20px;
-    
 }
 
 a{
@@ -74,7 +73,7 @@ h2{
 .about-me{
     display:flex;
     justify-content: space-between;
-    height: 260px;
+    height: auto;
 }
 
 .about-me-aside, .work-projects-aside{
@@ -114,7 +113,7 @@ h3{
 .work-projects{
     display: flex;
     margin-top: 20px;
-    height: 800px;
+    height: auto;
 }
 
 .work-projects-images{
@@ -203,4 +202,44 @@ h3{
     display: flex;
     align-items: end;
     box-shadow: 0px 0px 4px 6px aqua;
+}
+
+@media only screen and (max-width: 940px) {
+    .page-header{
+        height: 115px;
+    }
+    .header-nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .page-header{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-nav{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 509px) {
+    h1{
+        height: 25px;
+        font-size: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 5px 5px 5px 5px;
+    }
+    .header-nav{
+        font-size: small;
+        padding-top: 10px;
+        margin-bottom: 5px;
+    }
+    .page-header{
+        height: auto;
+    }
 }
