@@ -76,7 +76,7 @@ h2{
     height: auto;
 }
 
-.about-me-aside, .work-projects-aside{
+.about-me-aside, .work-projects-aside, .contact-me-aside{
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -109,7 +109,7 @@ h3{
     word-wrap: break-word;
 }
 
-.work-projects{
+.work-projects, .contact{
     display: flex;
     margin-top: 20px;
     height: auto;
@@ -184,6 +184,11 @@ h3{
     margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 15px;
+}
+
+.contact-info{
+    display: flex;
+    flex: 4;
 }
 
 @media only screen and (max-width: 1690px) {
