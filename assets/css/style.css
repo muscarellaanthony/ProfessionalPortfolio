@@ -1,14 +1,17 @@
+/* uiversal rules for the html */
 html{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: aqua;
 }
 
+/* setting a background image for the body */
 body{
     background-image: url(../images/uw-pool-3.jpg);
     background-size: cover;
     background-position: 50% 25%;
 }
 
+/* styling the header bar */
 .page-header{
     height: 70px;
     background-color: rgb(57, 59, 65);
@@ -18,6 +21,7 @@ body{
     box-shadow: 0px 0px 4px 6px aqua;
 } 
 
+/* styling the header within the header bar */
 h1{
     height: 50px;
     font-size: 45px;
@@ -29,11 +33,13 @@ h1{
     text-align: center;
 }
 
+/* styling the nav box that holds the nav buttons */
 .header-nav{
     font-size: 20px;
     margin-right: 20px;
 }
 
+/* styling each button within the nav box */
 .nav-btn{
     margin-left: 5px;
     margin-right: 5px;
@@ -42,15 +48,18 @@ h1{
     color: aqua;
 }
 
+/* styling links when the mouse hovers over them */
 a:hover{
     text-decoration: none;
     color: purple;
 }
 
+/* styling links when the mouse clicks them */
 a:active{
     color:rgb(209, 181, 22);
 }
 
+/* styling the subtitle box */
 .subtitle-box{
     height: 200px;
     display: flex;
@@ -58,6 +67,7 @@ a:active{
     align-items: center;
 }
 
+/* styling the text within the subtitle box */
 h2{
     height: 40px;
     font-size: 35px;
@@ -70,12 +80,14 @@ h2{
     box-shadow: 0px 0px 4px 6px aqua;
 }
 
+/* styling the box holding the about me aside and paragraphs */
 .about-me{
     display:flex;
     justify-content: space-between;
     height: auto;
 }
 
+/* styling each of the aside boxes on the left of the screen */
 .about-me-aside, .work-projects-aside, .contact-me-aside{
     display: flex;
     flex-direction: column;
@@ -84,6 +96,7 @@ h2{
     align-items: end;
 }
 
+/* styling the text within each aside box */
 h3{
     text-decoration: underline;
     font-size: 60px;
@@ -94,6 +107,13 @@ h3{
     border-radius: 8%;
 }
 
+/* styling the box that holds the about me paragraphs */
+.about-me-p{
+    flex: 4;
+    word-wrap: break-word;
+}
+
+/* styling the text within the about me paragraphs */
 .p1{
     font-weight: bold;
     background-color: rgb(57, 59, 65, 1);
@@ -101,19 +121,17 @@ h3{
     margin-right: 20px;
     box-shadow: 0px 0px 4px 6px aqua;
     word-wrap: break-word;
+    padding: 10px;
 }
 
-.about-me-p{
-    flex: 4;
-    word-wrap: break-word;
-}
-
+/* styling the work project and contact me boxes */
 .work-projects, .contact-me{
     display: flex;
     margin-top: 20px;
     height: auto;
 }
 
+/* styling the box holding each work history image */
 .work-projects-images{
     display: flex;
     flex: 4;
@@ -122,12 +140,14 @@ h3{
     align-content: flex-start;
 }
 
+/* styling the box holding the code refactor image */
 .code-refactor-link{
     display: flex;
     flex-grow: 4;
     text-decoration: none;
 }
 
+/* styling the code refactor image */
 .code-refactor-img{
     height: 300px;
     width: 100%;
@@ -141,6 +161,7 @@ h3{
     background-size: cover;
 }
 
+/* styling the text ontop of each image in work history */
 .code-refactor-img span, .diving-img span, .goggles-img span, .calculator-img span, .surfing-img span{
     background-color: rgb(57, 59, 65, 1);
     margin-left: 20px;
@@ -151,6 +172,33 @@ h3{
     color: aqua;
 }
 
+/* aligning each image below the hero */
+.lower-imgs{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 5px;
+}
+
+/* inserting background images for each work history box */
+.diving-img{
+    background-image: url(../images/diving.jpg);
+}
+
+.goggles-img{
+    background-image: url(../images/goggles.jpg);
+}
+
+.calculator-img{
+    background-image: url(../images/calculator.jpg);
+}
+
+.surfing-img{
+    background-image: url(../images/surfing.jpg);
+}
+
+/* creating hover effect for each backgorund image */
 .code-refactor-img:hover{
     background-image: url(../images/code_refactor-bandw.jpg);
 }
@@ -171,30 +219,7 @@ h3{
     background-image: url(../images/calculator-bandw.jpg)
 }
 
-.lower-imgs{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    row-gap: 15px;
-    column-gap: 5px;
-}
-
-.diving-img{
-    background-image: url(../images/diving.jpg);
-}
-
-.goggles-img{
-    background-image: url(../images/goggles.jpg);
-}
-
-.calculator-img{
-    background-image: url(../images/calculator.jpg);
-}
-
-.surfing-img{
-    background-image: url(../images/surfing.jpg);
-}
-
+/* styling each box containing work history pictures and titles */
 .diving-img, .goggles-img, .calculator-img, .surfing-img{
     background-position: center;
     background-size: cover;
@@ -209,6 +234,7 @@ h3{
     margin-bottom: 15px;
 }
 
+/* styling contact info box that holds the contact me buttons */
 .contact-info{
     display: flex;
     flex: 4;
@@ -217,6 +243,7 @@ h3{
     align-items: center;
 }
 
+/* styling the contact me buttons */
 .contact-info-btns{
     background-color: rgb(57, 59, 65, 1);
     padding: 5px;
@@ -225,18 +252,21 @@ h3{
     color: aqua;
 }
 
+/* changing the lower work pictures to stack under the hero */
 @media only screen and (max-width: 1795px) {
     .diving-img, .goggles-img, .surfing-img, .calculator-img{
         width: 100%;
     }
 } 
 
+/* shrinking aside boxes text to keep left side border line aligned */
 @media only screen and (max-width: 1305px) {
     h3{
         font-size: 25px;
     }
 } 
 
+/* shrinking contact me buttons to not overlap when screen shrinks */
 @media only screen and (max-width: 1020px){
     .contact-info-btns{
         font-size: 5px;
@@ -244,6 +274,7 @@ h3{
     }
 }
 
+/* shrinking page header and stacking nav buttons vertically */
 @media only screen and (max-width: 940px) {
     .page-header{
         height: 115px;
@@ -254,6 +285,9 @@ h3{
     }
 }
 
+/* switching header box to stack my name ontop of the nav buttons
+nav buttons return to row layout 
+aside text shrinks again to keep border line in line*/
 @media only screen and (max-width: 650px) {
     .page-header{
         display: flex;
@@ -269,6 +303,10 @@ h3{
     }
 }
 
+/* shrinking my name to take up less of a smaller window
+shrinking the nav buttons text to allow more space for the body
+page header now adjust auto to h1 size
+subtitle box and text shrink as well */
 @media only screen and (max-width: 509px) {
     h1{
         height: 25px;
@@ -294,6 +332,8 @@ h3{
     }
 }
 
+/* shrinking aside text one last time to ensure that the border
+line remains aligned at even the smallest window sizes */
 @media only screen and (max-width: 400px) {
     h3{
         font-size: 10px;
