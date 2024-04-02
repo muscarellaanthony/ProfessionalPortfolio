@@ -34,7 +34,7 @@ h1{
     margin-right: 20px;
 }
 
-a{
+.nav-btn{
     margin-left: 5px;
     margin-right: 5px;
     padding-left: 5px;
@@ -81,7 +81,6 @@ h2{
     flex-direction: column;
     flex: 1;
     border-right: solid rgb(57, 59, 65) 5px;
-    justify-content: top;
     align-items: end;
 }
 
@@ -123,6 +122,12 @@ h3{
     align-content: flex-start;
 }
 
+.code-refactor-link{
+    display: flex;
+    flex-grow: 4;
+    text-decoration: none;
+}
+
 .code-refactor-img{
     height: 300px;
     width: 100%;
@@ -143,10 +148,27 @@ h3{
     padding: 10px;
     font-weight: bold;
     box-shadow: 0px 0px 4px 6px aqua;
+    color: aqua;
 }
 
 .code-refactor-img:hover{
-    background-image: url(../images/code_refactor_hover.jpg);
+    background-image: url(../images/code_refactor-bandw.jpg);
+}
+
+.diving-img:hover{
+    background-image: url(../images/diving-bandw.jpg);
+}
+
+.goggles-img:hover{
+    background-image: url(../images/goggles-bandw.jpg)
+}
+
+.surfing-img:hover{
+    background-image: url(../images/surfing-bandw.jpg)
+}
+
+.calculator-img:hover{
+    background-image: url(../images/calculator-bandw.jpg)
 }
 
 .lower-imgs{
@@ -154,6 +176,7 @@ h3{
     width: 100%;
     flex-wrap: wrap;
     row-gap: 15px;
+    column-gap: 5px;
 }
 
 .diving-img{
@@ -199,9 +222,10 @@ h3{
     padding: 5px;
     box-shadow: 0px 0px 4px 6px aqua;
     height: auto;
+    color: aqua;
 }
 
-@media only screen and (max-width: 1690px) {
+@media only screen and (max-width: 1795px) {
     .diving-img, .goggles-img, .surfing-img, .calculator-img{
         width: 100%;
     }
